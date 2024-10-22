@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "historical-social-network"
+version = "0.1.0"
+description = ""
+authors = ["Vitalik Fedytnyk <vitalikfedytnyk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.3"
+SQLAlchemy = "^2.0.36"
+uvicorn = "^0.32.0"
+requests = "^2.32.3"
+pydantic = "^2.9.2"
+PyJWT = {extras = ["crypto"], version = "^2.8.0"}
+passlib = "^1.7.4"
+aiofiles = "^24.1.0"
+Jinja2 = "^3.1.4"
+fastapi-crudrouter = "^0.8.6"
+aiohttp = "^3.10.10"
+flask = "^3.0.3"
+
+[tool.poetry.dev-dependencies]
+mypy = "^1.12.1"
+rope = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
